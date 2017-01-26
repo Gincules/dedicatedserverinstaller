@@ -157,7 +157,7 @@ function FUNC_GAMELIST {
 				break
 			;;
 
-			[1-4]*|5|6|7|8|9|50|51|52)
+			1|2|3|4|5|6|7|8|9|[1-4][0-9]|5[0-2])
 				FUNC_SELECT_SERVER ${CHOICE}
 				break
 			;;
