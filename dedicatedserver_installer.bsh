@@ -873,8 +873,7 @@ do
 			echo "#                                                          #"
 			echo "############################################################"
 			echo "Made by stoerzi94"
-			echo "Steam: 453724213 - http://steamcommunity.com/id/stoerzi94/"
-			echo "Steamgroup: http://steamcommunity.com/groups/luma-servers/"
+			echo "Steam: http://steamcommunity.com/id/stoerzi94/"
 			read -rsp $'Press any key to continue...' -n1 ANYKEY
 		;;
 
