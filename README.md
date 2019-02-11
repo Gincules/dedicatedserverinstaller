@@ -3,7 +3,7 @@ I made this script some time ago to install / update / remove dedicated server t
 Default gameserver dir: /home/steam/servers/%APPID%-%SERVERID%
 
 Arch Linux - first enable the multilib repository
-```bash
+```
 pacman -S lib32-gcc-libs
 ```
 
