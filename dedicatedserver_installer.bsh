@@ -24,8 +24,8 @@ function FUNC_GAMELIST {
 			echo "# 10 - Counter-Strike: Condition Zero Dedicated Server     #"
 			echo "#                                                          #"
 			echo "#                                                          #"
-			echo "# <n> Next page                                            #"
-			echo "# <0> - Back to main menu                                  #"
+			echo "# <n> next page                                            #"
+			echo "# <0> - back to main menu                                  #"
 			echo "#                                                          #"
 			echo "############################################################"
 		elif [ ${MENU} -eq 2 ]; then
@@ -34,8 +34,8 @@ function FUNC_GAMELIST {
 			echo "#                                                          #"
 			echo "#                       SELECT A GAME                      #"
 			echo "#                                                          #"
-			echo "############################################################"	
-			echo "#                                                          #"				
+			echo "############################################################"
+			echo "#                                                          #"
 			echo "# 11 - Counter-Strike: Source Dedicated Server             #"
 			echo "# 12 - Chivalry Medieval Warfare Dedicated Server          #"
 			echo "# 13 - Dark Horizons: Mechanized Corps Dedicated Server    #"
@@ -47,10 +47,10 @@ function FUNC_GAMELIST {
 			echo "# 19 - Don't Starve Together Dedicated Server              #"
 			echo "# 20 - Fistful of Frags Server                             #"
 			echo "#                                                          #"
-			echo "# <p> Previous page                                        #"
-			echo "# <n> Next page                                            #"
-			echo "# <0> - Back to main menu                                  #"
-			echo "#                                                          #"	
+			echo "# <p> previous page                                        #"
+			echo "# <n> next page                                            #"
+			echo "# <0> - back to main menu                                  #"
+			echo "#                                                          #"
 			echo "############################################################"
 		elif [ ${MENU} -eq 3 ]; then
 			clear
@@ -71,10 +71,10 @@ function FUNC_GAMELIST {
 			echo "# 29 - Killing Floor Dedicated Server - Linux              #"
 			echo "# 30 - Left 4 Dead 2 Dedicated Server                      #"
 			echo "#                                                          #"
-			echo "# <p> Previous page                                        #"
-			echo "# <n> Next page                                            #"
-			echo "# <0> - Back to main menu                                  #"
-			echo "#                                                          #"	
+			echo "# <p> previous page                                        #"
+			echo "# <n> next page                                            #"
+			echo "# <0> - back to main menu                                  #"
+			echo "#                                                          #"
 			echo "############################################################"
 		elif [ ${MENU} -eq 4 ]; then
 			clear
@@ -95,10 +95,10 @@ function FUNC_GAMELIST {
 			echo "# 39 - Rust Dedicated Server                               #"
 			echo "# 40 - Serious Sam 3 Dedicated Server                      #"
 			echo "#                                                          #"
-			echo "# <p> Previous page                                        #"
-			echo "# <n> Next page                                            #"
-			echo "# <0> - Back to main menu                                  #"
-			echo "#                                                          #"	
+			echo "# <p> previous page                                        #"
+			echo "# <n> next page                                            #"
+			echo "# <0> - back to main menu                                  #"
+			echo "#                                                          #"
 			echo "############################################################"
 		elif [ ${MENU} -eq 5 ]; then
 			clear
@@ -119,10 +119,10 @@ function FUNC_GAMELIST {
 			echo "# 49 - The Ship Dedicated Server                           #"
 			echo "# 50 - Terraria Dedicated Server                           #"
 			echo "#                                                          #"
-			echo "# <p> Previous page                                        #"
-			echo "# <n> Next page                                            #"
-			echo "# <0> - Back to main menu                                  #"
-			echo "#                                                          #"	
+			echo "# <p> previous page                                        #"
+			echo "# <n> next page                                            #"
+			echo "# <0> - back to main menu                                  #"
+			echo "#                                                          #"
 			echo "############################################################"
 		elif [ ${MENU} -eq 6 ]; then
 			clear
@@ -134,6 +134,8 @@ function FUNC_GAMELIST {
 			echo "#                                                          #"
 			echo "# 51 - Unturned Dedicated Server                           #"
 			echo "# 52 - Zombie Panic Source Dedicated Server                #"
+			echo "# 53 - Hurtworld dedicated server                          #"
+			echo "# 54 - Tower Unite Dedicated Server                        #"
 			echo "#                                                          #"
 			echo "#                                                          #"
 			echo "#                                                          #"
@@ -141,11 +143,9 @@ function FUNC_GAMELIST {
 			echo "#                                                          #"
 			echo "#                                                          #"
 			echo "#                                                          #"
+			echo "# <p> previous page                                        #"
 			echo "#                                                          #"
-			echo "#                                                          #"
-			echo "# <p> Prevoius page                                        #"
-			echo "#                                                          #"
-			echo "# <0> - Back to main menu                                  #"
+			echo "# <0> - back to main menu                                  #"
 			echo "#                                                          #"
 			echo "############################################################"
 		fi
@@ -386,6 +386,14 @@ function FUNC_SELECT_SERVER {
 		52)
 			FUNC_INSTALL_SERVER 1750
 		;;
+
+		53)
+			FUNC_INSTALL_SERVER 405100
+		;;
+
+		54)
+			FUNC_INSTALL_SERVER 439660
+		;;
 		
 		*)
 			ERROR="WHOOPS SOMETHING WENT WRONG"
@@ -621,7 +629,7 @@ function FUNC_ADVANCED {
 		echo "#                                                          #"
 		echo "#                                                          #"
 		echo "#                                                          #"
-		echo "# <0> - Back to main menu                                  #"
+		echo "# <0> - back to main menu                                  #"
 		echo "#                                                          #"
 		echo "############################################################"
 		read -p "Your choice: " INPUT_ADVANCED
@@ -666,7 +674,7 @@ function FUNC_ADVANCED {
 					echo "#                                                          #"
 					echo "#                                                          #"
 					echo "#                                                          #"
-					echo "# <0> - Back                                               #"
+					echo "# <0> - back                                               #"
 					echo "#                                                          #"
 					echo "############################################################"
 					read -p "Please select a platform (Current = ${CROSSPLATFORM}): " INPUT_PLATFORM
@@ -731,8 +739,8 @@ function FUNC_HELP {
 			echo "#                                                          #"
 			echo "#                                                          #"
 			echo "#                                                          #"
-			echo "# <n> Next page                                            #"
-			echo "# <0> - Back to main menu                                  #"
+			echo "# <n> next page                                            #"
+			echo "# <0> - back to main menu                                  #"
 			echo "#                                                          #"
 			echo "############################################################"
 		elif [ ${MENU} -eq 2 ]; then
@@ -754,9 +762,9 @@ function FUNC_HELP {
 			echo "#                                                          #"
 			echo "#                                                          #"
 			echo "#                                                          #"
-			echo "# <p> Previous page                                        #"
+			echo "# <p> previous page                                        #"
 			echo "#                                                          #"
-			echo "# <0> - Back to main menu                                  #"
+			echo "# <0> - back to main menu                                  #"
 			echo "#                                                          #"
 			echo "############################################################"
 		fi
@@ -789,15 +797,15 @@ if [ ! -d "/home/steam" ]; then
                 echo "Please run the script as root first"
                 exit 1
         else
-                ulimit -n 2048
+                #ulimit -n 2048
 
-                if ! iptables -L | grep 'udp spts:27000:27030 dpts:1025:65355' >/dev/null 2>&1; then
-                        iptables -A INPUT -p udp -m udp --sport 27000:27030 --dport 1025:65355 -j ACCEPT
-                fi
+                #if ! iptables -L | grep 'udp spts:27000:27030 dpts:1025:65355' >/dev/null 2>&1; then
+                #        iptables -A INPUT -p udp -m udp --sport 27000:27030 --dport 1025:65355 -j ACCEPT
+                #fi
 
-                if ! iptables -L | grep 'udp spt:4380 dpts:1025:65355' >/dev/null 2>&1; then
-                        iptables -A INPUT -p udp -m udp --sport 4380 --dport 1025:65355 -j ACCEPT
-                fi
+                #if ! iptables -L | grep 'udp spt:4380 dpts:1025:65355' >/dev/null 2>&1; then
+                #        iptables -A INPUT -p udp -m udp --sport 4380 --dport 1025:65355 -j ACCEPT
+                #fi
 
                 if ! id -u "steam" >/dev/null 2>&1; then
                         useradd -m steam -s/bin/bash
@@ -872,8 +880,8 @@ do
 			echo "#                         CREDITS                          #"
 			echo "#                                                          #"
 			echo "############################################################"
-			echo "Made by stoerzi94"
-			echo "Steam: http://steamcommunity.com/id/stoerzi94/"
+			echo "Made by Gincules"
+			echo "Steam: http://steamcommunity.com/id/Gincules/"
 			read -rsp $'Press any key to continue...' -n1 ANYKEY
 		;;
 
