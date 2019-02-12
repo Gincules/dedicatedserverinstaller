@@ -842,7 +842,7 @@ do
 	echo "#                                                          #"
 	echo "#                                                          #"
 	echo "#                                                          #"
-	echo "# <0> - Exit                                               #"
+	echo "# <0> - exit                                               #"
 	echo "#                                                          #"
 	echo "############################################################"
 	read -p "Your choice: " input_menu
