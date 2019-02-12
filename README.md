@@ -1,5 +1,5 @@
-# DSI
-I made this script some time ago to install / update / remove dedicated server tools to my server. <br />
+# Information
+I made this script some time ago to install / update / remove dedicated server tools to my server.
 Default gameserver dir: /home/steam/servers/%APPID%-%SERVERID%
 
 # Requirements
@@ -28,6 +28,24 @@ yum install glibc libstdc++
 RedHat/CentOS 64-Bit
 ```
 yum install glibc.i686 libstdc++.i686
+```
+
+# Installation
+Run the script as root first
+```
+sudo ./dsi.bsh
+```
+
+Move the script to /home/steam
+```
+sudo mv dsi.bsh /home/steam/dsi.bsh
+sudo chown steam:steam /home/steam/dsi.bsh
+su - steam
+```
+
+Now you can run the script as user steam
+```
+./dsi.bsh
 ```
 
 # Usage
