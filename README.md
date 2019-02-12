@@ -59,7 +59,7 @@ You are able to login anonymous but also able to login with your steam account i
 ![anonymous login](https://i.imgur.com/FczIgKV.png)
 
 Two factor authentification is supported for login
-![two factor](https://i.imgur.com/7zhXAVz.png)
+![two factor](https://i.imgur.com/dOUQhwk.png)
 
 You are able to install every game or tool by enter the steam store ID manually
 ![advanced](https://i.imgur.com/MzEt54a.png)
