@@ -40,7 +40,7 @@ Move the script to /home/steam
 ```
 sudo mv dsi.bsh /home/steam/dsi.bsh
 sudo chown steam:steam /home/steam/dsi.bsh
-su - steam
+sudo su - steam
 ```
 
 Now you can run the script as user steam
