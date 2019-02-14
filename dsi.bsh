@@ -134,7 +134,7 @@ function func_gamelist {
 			echo "#                                                          #"
 			echo "# 51 - Unturned Dedicated Server                           #"
 			echo "# 52 - Zombie Panic Source Dedicated Server                #"
-			echo "# 53 - Hurtworld dedicated server                          #"
+			echo "# 53 - Hurtworld Dedicated Server                          #"
 			echo "# 54 - Tower Unite Dedicated Server                        #"
 			echo "#                                                          #"
 			echo "#                                                          #"
@@ -645,7 +645,7 @@ function func_advanced {
 				echo "#                                                          #"
 				echo "############################################################"
 				echo "Current platform: ${CROSSPLATFORM}"
-				echo "<0> - Back"
+				echo "<0> - back"
 				read -p "GAME-ID: " input_gameid
 
 				[ ${input_gameid} -ne 0 ] && func_install_server ${input_gameid}
@@ -676,7 +676,7 @@ function func_advanced {
 					echo "# <0> - back                                               #"
 					echo "#                                                          #"
 					echo "############################################################"
-					read -p "Please select a platform (Current = ${CROSSPLATFORM}): " input_platform
+					read -p "Please select a platform (current = ${CROSSPLATFORM}): " input_platform
 
 					case ${input_platform} in
 						0)
